@@ -46,12 +46,13 @@ text-align: center;
 
 /* MAIN */
 .features {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 .features-list {
     font-size: 0;
     margin: 0;
     padding: 0;
+    padding-bottom: 134px;
 }
 .features-list-item {
     display: inline-block;
@@ -64,6 +65,9 @@ text-align: center;
 }
 .features-list-item:nth-of-type(2n + 1) {
     margin-right: 60px;
+}
+.features-list-item:nth-last-of-type(-n + 2) {
+    margin-bottom: 0;
 }
 .features-list-world {
     text-transform: uppercase;
