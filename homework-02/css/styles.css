@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/* body {
+    font-size: 0;
+} */
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* NAVIGATION */
+.menu {
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.main-item {
+    display: inline-block;
+}
+.menu li:not(:last-child) {
+    margin-right: 100px;
+}
+.navigation {
+    padding-top: 76px;
+    padding-bottom: 100px;
+}
+.main-link {
+    font-size: 14px;
+    color: black;
+    font-family: 'PlayFierDisplay';
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.main-link:hover,
+.main-link:focus {
+    color: blue;
+}
+
+/* MAIN */
+.features {
+    margin-bottom: 70px;
+}
+.features-list {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+.features-list-item {
+    display: inline-block;
+    width: 420px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-bottom: 134px;
+
+}
+.features-list-item:nth-of-type(2n + 1) {
+    margin-right: 60px;
+}
+.features-list-world {
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 26px;
+}
+.features-list-name {
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 38px;
+}
+.features-list-text {
+    font-size: 14px;
+    margin: 0;
+}
+.more {
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 auto;
+    display: block;
+}
+/* * {
+    outline: 1px solid red;
+} */
