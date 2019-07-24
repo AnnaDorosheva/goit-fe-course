@@ -1,0 +1,232 @@
+html {
+    box-sizing: border-box;
+}
+
+*
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+}
+.site-logo {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.main {
+    padding: 38px 0;
+}
+.navigation {
+    margin: 0;
+    padding: 0;
+    margin-top: 6px;
+    float: right;
+    list-style: none;
+    width: 470px;
+}
+.navigation-item {
+float: left;
+text-transform: uppercase;
+font-size: 12px;
+font-family: 'Open Sans';
+font-weight: bold;
+}
+.navigation-item:not(:last-child) {
+    margin-right: 40px;
+}
+.navigation-link {
+    text-decoration: none;
+}
+.navigation-link:hover {
+    color: #1abc9c;
+}
+
+  
+/* SLIDER */
+.slider {
+    position: relative;
+}
+.slider-fone {
+    display: block;
+    min-height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 2, 0.5), rgba(2, 0, 0, 0.5)), url('../img/slide.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* INSIDE SLIDER */
+.slider-inside {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translateX(-50%) translateY(-50%);
+width: 1110px;
+height: 600px;
+}
+.slider-strl{
+    position: absolute;
+    display: inline-block;
+    border: none;
+    width: 110px;
+    height: 110px;
+    background-color: #4f9c8b;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.strl-right {
+right: 0;
+background-image: url(../img/right1.png);
+}
+.strl-left {
+left: 0;
+background-image: url(../img/left1.png);
+}
+.slider-inform {
+    position: absolute;
+    left: 50%;
+top: 50%;
+transform: translateX(-50%) translateY(-50%);
+width: 770px;;
+text-transform: uppercase;
+color: #ffffff;
+font-family: 'Roboto';
+}
+.slider-name {
+    font-size: 60px;
+    margin: 0;
+    padding-bottom: 20px;
+    font-weight: 900;
+}
+.slider-text {
+    font-size: 26px;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* CATALOG */
+.catalog {
+    background-color: #e9f0fd;
+}
+.catalog-name {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 110px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 80px;
+}
+.catalog-name::after {
+    display: block;
+    content: "";
+    height: 6px;
+    width: 160px;
+    background-color: #4ec6ab;
+    margin: 0 auto;
+}
+
+/* CATALOG PRODUCTS */
+.catalog {
+    padding-bottom: 100px;
+}
+.catalog-products {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.catalog-products-photo {
+    display: block;
+}
+.catalog-products-item {
+    float: left;
+}
+.catalog-products-item:not(:last-child) {
+    margin-right: 28px;
+}
+.catalog-products-item:hover .product-name {
+    background-color: #1abc9c;
+}
+.catalog-products-item:hover .product-price {
+    background-color: #7fd9c7;
+}
+.product-name {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 256px;
+    height: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    padding-left: 12px;
+}
+.product-price {
+    float: right;
+    width: 50px;
+    height: 40px;
+    background-color: #909090;
+    padding-left: 12px;
+}
+
+/* FOOTER */
+.contacts {
+    display: block;
+    margin: 0 auto;
+    height: 86px;
+    background-color: #323232;
+    line-height: 100px;
+    font-size: 16px;
+    color: #ffffff
+}
+.contact-inform {
+    text-align: center;
+    margin: 0 auto;
+}
+.contact-first {
+    color: #ffffff;
+}
+.contact-first::after {
+    content: " \233e ";
+}
+.contact-second {
+    color: #ffffff;
+    padding-left: 4px;
+}
+.contact-second::after {
+    content: " | ";
+}
+.contact-third {
+    color: #ffffff;
+    margin-right: 4px;
+}
+.contact-fore {
+    color: #1abc9c;
+    padding-left: 4px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+* {
+    outline: 1px solid red;
+}
