@@ -38,6 +38,7 @@ body {
 .navigation-item {
 float: left;
 text-transform: uppercase;
+color: #000000;
 font-size: 12px;
 font-family: 'Open Sans';
 font-weight: bold;
@@ -214,9 +215,8 @@ font-family: 'Roboto';
     position: absolute;
     width: 170px;
     height: 112px;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    left: 44px;
+    top: 86px;
 }
 .catalog-products-item:focus .catalog-icons,
 .catalog-products-item:hover .catalog-icons {
