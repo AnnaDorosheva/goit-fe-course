@@ -34,22 +34,28 @@ html {
 
   /* HEADER */
   .wrapper {
+      display: block;
       width: 320px;
       margin: 0 auto;
   }
   .site-pic {
+    background-image: url(../img/Vector\ Smart\ Object.png);
+    background-color: #000000;
       display: block;
       position: relative;
       width: 100%;
+      height: auto;
       margin: 0 auto;
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
   }
   .site-header {
-      position: absolute;
+      /* position: absolute; */
       top: 0;
       text-align: center;
       padding: 20px 10px;
+      margin: 0 auto;
   }
   .site-button {
       width: 86px;
@@ -167,6 +173,7 @@ html {
   }
   .site-cards-about {
     font-family: 'RobotoL';
+    color: #666666;
     letter-spacing: -0.3px;
     padding: 0;
     /* padding-bottom: 16px; */
@@ -188,3 +195,92 @@ html {
     color: #ff4e50;
     text-decoration: none;
   }
+
+  @media (min-width:768px) {
+    .wrapper {
+        display: block;
+        width: 748px;
+        margin: 0 auto;
+    }
+    .clearfix::after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+    .site-pic {
+        background-image: url(../img/medium-background.png);
+    }
+    .buttons {
+        padding: 46px 40px 0px 40px;
+    }
+    .name-site {
+        float: left;
+        padding: 0;
+    }
+    .site-button {
+        float: right;
+        margin-bottom: 160px;
+    }
+    .site-header {
+       margin: 0 auto;
+       padding: 0;
+       padding-bottom: 234px;
+    }
+    .name-site-about {
+        font-size: 52px;
+     padding: 0 120px 0 120px;
+      margin: 0 auto;
+      padding-bottom: 36px;
+    }
+    .name-site-theme {
+        font-size: 24px;
+        letter-spacing: 0px;
+        padding-bottom: 36px;
+    }
+    .name-site-doing {
+        font-size: 14px;
+        width: 248px;
+    }
+    .site-cards {
+        width: 532px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 34px;
+    }
+.site-cards-item {
+    width: 256px;
+    padding: 0 16px 56px 16px;
+}
+.item-second {
+order: 1;
+}
+.item-forth {
+    order: 2;
+}
+/* .site-cards-item:not(:nth-last-child(-n + 2)) {
+    padding-bottom: 56px;
+} */
+}
+  
+
+  @media (min-width:942px) {
+    .wrapper {
+        width: 942px;
+    }
+.site-pic {
+    background-image: url(../img/large-background.png);
+}
+.site-cards {
+    width: 940px;
+}
+.site-cards-item {
+    width: 222px;
+}
+.name-site-about {
+    padding-right: 200px;
+    padding-left: 200px;
+}
+}
