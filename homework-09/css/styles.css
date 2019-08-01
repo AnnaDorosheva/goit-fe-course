@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "MontserratB";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-100 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/roboto-v20-latin-100.eot"); /* IE9 Compat Modes */
+  src: local("Roboto Thin"), local("Roboto-Thin"),
+    url("../fonts/roboto-v20-latin-100.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v20-latin-100.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v20-latin-100.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v20-latin-100.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/roboto-v20-latin-100.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+
+/* HEADER */
+.site-pic {
+  background-image: url("../img/large-background.png");
+  background-color: #000000;
+  display: block;
+  min-width: 100%;
+  min-height: 540px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.for-buttoms {
+  padding-top: 18px;
+}
+.site-button {
+  width: 86px;
+  height: 30px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 30px;
+}
+.site-button-lik {
+  font-family: "MontserratB";
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.site-button:focus,
+.site-button:hover {
+  border: 2px solid #ffffff;
+}
+.name-site {
+  font-family: "MontserratB";
+  font-size: 20px;
+  padding-top: 116px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 36px;
+  margin: 0;
+  text-decoration: none;
+}
+.name-site-about {
+  font-family: "MontserratB";
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  padding-bottom: 14px;
+  text-align: center;
+}
+.name-site-theme {
+  font-family: "RobotoL";
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+  padding: 0 38px 16px 38px;
+  text-align: center;
+}
+.name-site-doing {
+  font-family: "MontserratB";
+  width: 280px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #ff4e50;
+  border-radius: 30px;
+  border: transparent;
+}
+
+/* SECTION ABOUT */
+h2 {
+  font-family: "MontserratB";
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 18px;
+}
+.site-cards {
+  list-style: none;
+  padding: 0 22px 0 22px;
+  text-align: center;
+  margin: 0;
+}
+.site-cards-item {
+  position: relative;
+  padding-bottom: 30px;
+  max-width: 248px;
+}
+.site-cards-photo {
+  position: relative;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.site-cards-item::after {
+  position: absolute;
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  right: 58px;
+  top: 86px;
+}
+.item-first::after {
+  background-image: url(../img/icon11.png);
+  background-color: #ff4e50;
+}
+.item-second::after {
+  background-image: url(../img/icon22.png);
+  background-color: #ffa507;
+}
+.item-third::after {
+  background-image: url(../img/icon33.png);
+  background-color: #1cd7ad;
+}
+.item-forth::after {
+  background-image: url(../img/icon44.png);
+  background-color: #4e73db;
+}
+.site-cards-name {
+  font-family: "MontserratB";
+  padding: 0;
+  padding-bottom: 16px;
+  margin: 0;
+}
+.site-cards-about {
+  font-family: "RobotoL";
+  color: #666666;
+  letter-spacing: -0.3px;
+  padding: 0;
+}
+
+/* BUTTON */
+.cards-more {
+  display: block;
+  margin: 0 auto;
+  font-family: "MontserratB";
+  width: 280px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px solid #ff4e50;
+}
+.cards-more-item {
+  color: #ff4e50;
+  text-decoration: none;
+  padding-bottom: 58px;
+}
+
+/* MEDIA MD */
+@media (min-width: 768px) {
+  .site-pic {
+    padding-bottom: 230px;
+  }
+  .name-site-about {
+    font-size: 50px;
+    margin: 0 auto;
+    padding-bottom: 36px;
+    padding-top: 154px;
+  }
+  .name-site {
+    padding: 0;
+    padding-top: 50px;
+  }
+  .name-site-theme {
+    font-size: 24px;
+    padding-bottom: 40px;
+  }
+  .for-buttoms {
+    padding-top: 50px;
+  }
+  .name-site-doing {
+    width: 224px;
+    font-size: 14px;
+  }
+}
+
+/* MEDIA LG */
+@media (min-width: 942px) {
+}
