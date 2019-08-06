@@ -1,0 +1,111 @@
+.fone {
+  width: 1900px;
+  height: 1000px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 46px;
+  background: linear-gradient(
+      to bottom left,
+      rgba(255, 153, 153, 0.8),
+      rgba(255, 204, 102, 0.8)
+    ),
+    url('../images/bird@1X.png') no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .box {
+    background: linear-gradient(
+        to bottom left,
+        rgba(255, 153, 153, 0.8),
+        rgbargba(255, 204, 102, 0.8)
+      ),
+      url('../images/bird@2X.png') no-repeat;
+  }
+
+  /* WORK PAGE */
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  position: absolute;
+  top: 36px;
+  min-height: 100px;
+}
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 500px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu__menu-item {
+  @include fontsDecoration(14px, $color-white, 'Montserrat');
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu__item-men {
+  display: block;
+  height: 26px;
+  padding-top: 6px;
+
+  &:hover {
+    color: $color-pink;
+    padding-bottom: 24px;
+    border-bottom: $color-pink solid 4px;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+}
+.menu__svg {
+  fill: $color-white;
+  width: 30px;
+  height: 30px;
+  padding-top: 6px;
+
+  &:hover {
+    fill: $color-pink;
+  }
+}
+
+.header__header-name {
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 36px;
+  @include fontsDecoration(72px, $color-white, 'Kaushan Script', 400, italic);
+}
+.header__header-text {
+  width: 830px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 82px;
+  @include fontsDecoration(150px, $color-white, 'Montserrat', 700);
+  
+}
+.header__learn-more {
+  width: 160px;
+  height: 38px;
+  font-size: 14px;
+  padding: 0;
+  padding-top: 10px;
+  margin: 0 auto;
+  color: $color-white;
+  border: 2px solid $color-white;
+  text-transform: uppercase;
+  text-align: center;
+}

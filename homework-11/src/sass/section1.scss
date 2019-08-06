@@ -1,0 +1,133 @@
+.about {
+  width: 1200px;
+  margin: 0 avto;
+  margin-bottom: 90px;
+}
+.about__abou-us {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  @include fontsDecoration(24px, rgb(0, 0, 0), 'Kaushan Script', 400, italic);
+}
+.about__serwices {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 avto;
+  @include fontsDecoration(30px, rgb(0, 0, 0), 'Montserrat', 700);
+
+  &::after {
+    display: block;
+    content: '';
+    height: 4px;
+    width: 60px;
+    background-color: $color-pink;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.about-list {
+  padding: 10px;
+  -ms-flex-preferred-size: 380px;
+  flex-basis: 380px;
+  padding-left: 70px;
+  position: relative;
+
+  &:nth-child(-n + 3) {
+    margin-bottom: 30px;
+  }
+}
+.about-list__picture {
+  text-transform: uppercase;
+  @include fontsDecoration(14px, rgb(0, 0, 0), 'Montserrat', 700);
+}
+.about-list__for-picture {
+  line-height: 24px;
+  margin: 0 auto;
+  @include fontsDecoration(14px, $color-fonts, 'Roboto');
+}
+/* FON PICTURES */
+.about-list__alarm::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('../images/icon-clock.svg#clock');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin-left: -45px;
+}
+.about-list__book::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('../images/icon-book.svg#book');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin-left: -45px;
+}
+.about-list__svg-pic {
+  display: block;
+  position: absolute;
+  margin-left: -55px;
+  margin-top: 20px;
+}
+.about-list__computer::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('../images/icon-computer.svg#computer');
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -45px;
+}
+.about-list__home::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('../images/icon-home.svg#home');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin-left: -45px;
+}
+.about-list__image::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('../images/icon-image.svg#image');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin-left: -45px;
+}
+.about-list__line::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('../images/icon-linegraph.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin-left: -45px;
+}

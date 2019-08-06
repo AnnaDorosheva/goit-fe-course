@@ -1,0 +1,37 @@
+.footer-box__info {
+  line-height: 60px;
+  font-family: 'Montserrat';
+
+  &::before {
+    content: '\233e';
+  }
+}
+.footer-box__name-footer {
+  color: $color-pink;
+  padding-left: 4px;
+}
+.footer-box {
+  border: 2px solid $color-border;
+  position: relative;
+}
+.footer-box__mail {
+  border: 2px solid $color-border;
+  width: 380px;
+  line-height: 40px;
+  position: absolute;
+  right: 0;
+  top: 26px;
+  padding-left: 10px;
+  @include fontsDecoration(14px, $color-fonts, 'Roboto', 400, italic);
+}
+.footer-box__button {
+  width: 150px;
+  height: 40px;
+  color: $color-white;
+  background-color: #99cccc;
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+}
