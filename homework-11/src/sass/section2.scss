@@ -36,32 +36,17 @@
 //   transition: 0.2s linear;
 // }
 .team-list__transparent {
-  width: 380px;
-  height: 472px;
   position: absolute;
+  width: 382px;
+  height: 474px;
   top: 0;
   opacity: 0;
-
-  &:hover {
-    opacity: 0.5;
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#ff9999),
-      to(#ffff99)
-    );
-    background-image: -webkit-linear-gradient(top, #ff9999, #ffff99);
-    background-image: -o-linear-gradient(top, #ff9999, #ffff99);
-    background-image: linear-gradient(to bottom, #ff9999, #ffff99);
-    -webkit-box-shadow: 10px 10px 0 rgba(153, 204, 255, 0.7);
-    box-shadow: 10px 10px 0 rgba(153, 204, 255, 0.7);
-    -webkit-transition: -webkit-box-shadow 0.2s linear;
-    transition: -webkit-box-shadow 0.2s linear;
-    -o-transition: box-shadow 0.2s linear;
-    transition: box-shadow 0.2s linear;
-    transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
-  }
+  background-image: linear-gradient(to bottom, rgba(255, 153, 153, 0.5), rgba(255, 255, 153, 0.5));
+}
+.team-list:hover .team-list__transparent {
+  opacity: 1;
+  box-shadow: 10px 10px 0 rgba(153, 204, 255, 0.7);
+  transition: box-shadow 0.2s linear;
 }
 .team-list:hover .icons {
   opacity: 1;
@@ -80,30 +65,24 @@
 }
 /* ICONS */
 .for-icons {
-  position: relative;
-  width: 380px;
-  height: 472px;
+ width: 380px;
+ height: 472px;
 }
+
 .icons {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%);
-  transform: translate(-50%, 50%);
+  top: 208px;;
+  left: 74px;
+  // transform: translate(-50%, 50%);
   padding: 0;
   margin: 0 auto;
   opacity: 0;
   width: 230px;
+  height: 58px;
 }
 .icons__icon-social {
   display: block;
@@ -113,21 +92,23 @@
   background-color: $background-socials;
   text-decoration: none;
   padding-top: 14px;
+}
 
-  &:hover {
+.icons__icon-social:hover {
     background-color: rgb(255, 153, 153);
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear;
+}
 
-    &:hover .icons__social {
+.icons__icon-social:hover .icons__social {
       fill: rgb(255, 255, 255);
       -webkit-transition: 0.2s linear;
       -o-transition: 0.2s linear;
       transition: 0.2s linear;
     }
-  }
-}
+  
+
 
 .icons__social {
   display: block;

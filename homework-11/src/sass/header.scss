@@ -1,6 +1,6 @@
 .fone {
-  width: 1900px;
-  height: 1000px;
+  // width: 1900px;
+  min-height: 1000px;
   margin: 0 auto;
   position: relative;
   margin-bottom: 46px;
@@ -10,6 +10,8 @@
       rgba(255, 204, 102, 0.8)
     ),
     url('../images/bird@1X.png') no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .box {
@@ -24,6 +26,7 @@
   /* WORK PAGE */
 }
 .wrapper {
+  display: block;
   width: 1200px;
   margin: 0 auto;
 }
@@ -52,7 +55,7 @@
   margin: 0;
   list-style: none;
 }
-.menu__menu-item {
+.menu__item-men {
   @include fontsDecoration(14px, $color-white, 'Montserrat');
   text-decoration: none;
   text-transform: uppercase;
@@ -71,17 +74,15 @@
     transition: 0.2s linear;
   }
 }
-.menu__svg {
+.menu__svg_hover {
   fill: $color-white;
   width: 30px;
   height: 30px;
   padding-top: 6px;
-
-  &:hover {
-    fill: $color-pink;
-  }
 }
-
+.menu__svg_item:hover {
+  fill: $color-pink;
+}
 .header__header-name {
   text-align: center;
   margin-top: 130px;

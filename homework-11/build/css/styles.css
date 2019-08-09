@@ -402,15 +402,17 @@ input[type="radio"].visually-hidden {
 }
 
 .fone {
-  width: 1900px;
-  height: 1000px;
+  min-height: 1000px;
   margin: 0 auto;
   position: relative;
   margin-bottom: 46px;
   background: linear-gradient(to bottom left, rgba(255, 153, 153, 0.8), rgba(255, 204, 102, 0.8)), url("../images/bird@1X.png") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .wrapper {
+  display: block;
   width: 1200px;
   margin: 0 auto;
 }
@@ -435,7 +437,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.menu__menu-item {
+.menu__item-men {
   font-size: 14px;
   color: white;
   font-family: "Montserrat";
@@ -458,14 +460,14 @@ input[type="radio"].visually-hidden {
   transition: 0.2s linear;
 }
 
-.menu__svg {
+.menu__svg_hover {
   fill: white;
   width: 30px;
   height: 30px;
   padding-top: 6px;
 }
 
-.menu__svg:hover {
+.menu__svg_item:hover {
   fill: #ffcccc;
 }
 
@@ -504,12 +506,6 @@ input[type="radio"].visually-hidden {
   border: 2px solid white;
   text-transform: uppercase;
   text-align: center;
-}
-
-.about {
-  width: 1200px;
-  margin: 0 avto;
-  margin-bottom: 90px;
 }
 
 .about__abou-us {
@@ -699,16 +695,16 @@ input[type="radio"].visually-hidden {
 }
 
 .team-list__transparent {
-  width: 380px;
-  height: 472px;
   position: absolute;
+  width: 382px;
+  height: 474px;
   top: 0;
   opacity: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 153, 153, 0.5), rgba(255, 255, 153, 0.5));
 }
 
-.team-list__transparent:hover {
-  opacity: 0.5;
-  background-image: linear-gradient(to bottom, #ff9999, #ffff99);
+.team-list:hover .team-list__transparent {
+  opacity: 1;
   box-shadow: 10px 10px 0 rgba(153, 204, 255, 0.7);
   transition: box-shadow 0.2s linear;
 }
@@ -736,7 +732,6 @@ input[type="radio"].visually-hidden {
 /* ICONS */
 
 .for-icons {
-  position: relative;
   width: 380px;
   height: 472px;
 }
@@ -747,13 +742,13 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
+  top: 208px;
+  left: 74px;
   padding: 0;
   margin: 0 auto;
   opacity: 0;
   width: 230px;
+  height: 58px;
 }
 
 .icons__icon-social {
@@ -771,7 +766,7 @@ input[type="radio"].visually-hidden {
   transition: 0.2s linear;
 }
 
-.icons__icon-social:hover:hover .icons__social {
+.icons__icon-social:hover .icons__social {
   fill: white;
   transition: 0.2s linear;
 }
