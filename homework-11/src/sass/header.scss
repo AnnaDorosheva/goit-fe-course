@@ -1,5 +1,4 @@
 .fone {
-  // width: 1900px;
   min-height: 1000px;
   margin: 0 auto;
   position: relative;
@@ -24,11 +23,6 @@
   }
 
   /* WORK PAGE */
-}
-.wrapper {
-  display: block;
-  width: 1200px;
-  margin: 0 auto;
 }
 .header {
   position: absolute;
@@ -79,10 +73,12 @@
   width: 30px;
   height: 30px;
   padding-top: 6px;
+
+  &:hover {
+    fill: $color-pink;
+  }
 }
-.menu__svg_item:hover {
-  fill: $color-pink;
-}
+
 .header__header-name {
   text-align: center;
   margin-top: 130px;
@@ -99,6 +95,7 @@
   
 }
 .header__learn-more {
+  display: block;
   width: 160px;
   height: 38px;
   font-size: 14px;
@@ -109,4 +106,5 @@
   border: 2px solid $color-white;
   text-transform: uppercase;
   text-align: center;
+  list-style: none;
 }

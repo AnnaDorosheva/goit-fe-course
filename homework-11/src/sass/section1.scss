@@ -3,13 +3,13 @@
   text-align: center;
   margin: 0 auto;
   margin-bottom: 22px;
-  @include fontsDecoration(24px, rgb(0, 0, 0), 'Kaushan Script', 400, italic);
+  @include fontsDecoration(24px, $color-black, 'Kaushan Script', 400, italic);
 }
 .about__serwices {
   text-align: center;
   text-transform: uppercase;
   margin: 0 avto;
-  @include fontsDecoration(30px, rgb(0, 0, 0), 'Montserrat', 700);
+  @include fontsDecoration(30px, $color-black, 'Montserrat', 700);
 
   &::after {
     display: block;
@@ -47,7 +47,7 @@
 }
 .about-list__picture {
   text-transform: uppercase;
-  @include fontsDecoration(14px, rgb(0, 0, 0), 'Montserrat', 700);
+  @include fontsDecoration(14px, $color-black, 'Montserrat', 700);
 }
 .about-list__for-picture {
   line-height: 24px;

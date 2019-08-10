@@ -385,6 +385,12 @@ html {
   box-sizing: inherit;
 }
 
+.wrapper {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visuali-hidden,
 input[type="radio"].visually-hidden {
@@ -409,12 +415,6 @@ input[type="radio"].visually-hidden {
   background: linear-gradient(to bottom left, rgba(255, 153, 153, 0.8), rgba(255, 204, 102, 0.8)), url("../images/bird@1X.png") no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.wrapper {
-  display: block;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .header {
@@ -467,7 +467,7 @@ input[type="radio"].visually-hidden {
   padding-top: 6px;
 }
 
-.menu__svg_item:hover {
+.menu__svg_hover:hover {
   fill: #ffcccc;
 }
 
@@ -496,6 +496,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header__learn-more {
+  display: block;
   width: 160px;
   height: 38px;
   font-size: 14px;
@@ -506,6 +507,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid white;
   text-transform: uppercase;
   text-align: center;
+  list-style: none;
 }
 
 .about__abou-us {
@@ -694,15 +696,6 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.team-list__transparent {
-  position: absolute;
-  width: 382px;
-  height: 474px;
-  top: 0;
-  opacity: 0;
-  background-image: linear-gradient(to bottom, rgba(255, 153, 153, 0.5), rgba(255, 255, 153, 0.5));
-}
-
 .team-list:hover .team-list__transparent {
   opacity: 1;
   box-shadow: 10px 10px 0 rgba(153, 204, 255, 0.7);
@@ -712,6 +705,15 @@ input[type="radio"].visually-hidden {
 .team-list:hover .icons {
   opacity: 1;
   transition: 0.2s linear;
+}
+
+.team-list__transparent {
+  position: absolute;
+  width: 382px;
+  height: 474px;
+  top: 0;
+  opacity: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 153, 153, 0.5), rgba(255, 255, 153, 0.5));
 }
 
 .team-list__name {
@@ -812,6 +814,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-box__button {
+  display: block;
   width: 150px;
   height: 40px;
   color: white;
@@ -821,6 +824,12 @@ input[type="radio"].visually-hidden {
   text-align: center;
   bottom: 0;
   right: 0;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

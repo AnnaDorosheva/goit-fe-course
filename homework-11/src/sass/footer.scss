@@ -25,6 +25,7 @@
   @include fontsDecoration(14px, $color-fonts, 'Roboto', 400, italic);
 }
 .footer-box__button {
+  display: block;
   width: 150px;
   height: 40px;
   color: $color-white;
@@ -34,4 +35,6 @@
   text-align: center;
   bottom: 0;
   right: 0;
+  text-decoration: none;
+  @include fontsDecoration(14px, $color-white, 'Montserrat', 700);
 }

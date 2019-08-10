@@ -27,32 +27,31 @@
 }
 .team-list {
   position: relative;
-}
 
-// .team-list__trasparent:hover .icons {
-//   opacity: 1;
-//   -webkit-transition: 0.2s linear;
-//   -o-transition: 0.2s linear;
-//   transition: 0.2s linear;
-// }
+  &:hover .team-list__transparent {
+    opacity: 1;
+    box-shadow: 10px 10px 0 rgba(153, 204, 255, 0.7);
+    transition: box-shadow 0.2s linear;
+  }
+
+  &:hover .icons {
+    opacity: 1;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+}
 .team-list__transparent {
   position: absolute;
   width: 382px;
   height: 474px;
   top: 0;
   opacity: 0;
-  background-image: linear-gradient(to bottom, rgba(255, 153, 153, 0.5), rgba(255, 255, 153, 0.5));
-}
-.team-list:hover .team-list__transparent {
-  opacity: 1;
-  box-shadow: 10px 10px 0 rgba(153, 204, 255, 0.7);
-  transition: box-shadow 0.2s linear;
-}
-.team-list:hover .icons {
-  opacity: 1;
-  -webkit-transition: 0.2s linear;
-  -o-transition: 0.2s linear;
-  transition: 0.2s linear;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 153, 153, 0.5),
+    rgba(255, 255, 153, 0.5)
+  );
 }
 .team-list__name {
   text-transform: uppercase;
@@ -65,19 +64,17 @@
 }
 /* ICONS */
 .for-icons {
- width: 380px;
- height: 472px;
+  width: 380px;
+  height: 472px;
 }
-
 .icons {
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  top: 208px;;
+  top: 208px;
   left: 74px;
-  // transform: translate(-50%, 50%);
   padding: 0;
   margin: 0 auto;
   opacity: 0;
@@ -92,26 +89,23 @@
   background-color: $background-socials;
   text-decoration: none;
   padding-top: 14px;
-}
 
-.icons__icon-social:hover {
-    background-color: rgb(255, 153, 153);
+  &:hover {
+    background-color: $socials;
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear;
+  }
+
+  &:hover .icons__social {
+    fill: $color-white;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
 }
-
-.icons__icon-social:hover .icons__social {
-      fill: rgb(255, 255, 255);
-      -webkit-transition: 0.2s linear;
-      -o-transition: 0.2s linear;
-      transition: 0.2s linear;
-    }
-  
-
-
 .icons__social {
   display: block;
-  fill: rgb(255, 153, 153);
+  fill: $socials;
   margin: 0 auto;
 }
