@@ -719,6 +719,9 @@ input[type="radio"].visually-hidden {
 .team-list__name {
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 14px;
 }
 
 .team-list__job {
@@ -736,6 +739,11 @@ input[type="radio"].visually-hidden {
 .for-icons {
   width: 380px;
   height: 472px;
+}
+
+.for-icons:hover {
+  transform: translate(-10px, -10px);
+  transition: 0.2s linear;
 }
 
 .icons {
