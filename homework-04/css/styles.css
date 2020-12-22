@@ -1,0 +1,124 @@
+
+
+/* haeder */
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+}
+.main-nav {
+    padding: 30px 0 30px 0;
+}
+.site-logo {
+    float: left;
+    margin: 0;
+    padding: 0;
+    /* padding-top: 30px; */
+}
+.main-menu {
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 470px;
+    margin-top: 16px;
+    /* padding-top: 40px; */
+}
+.main-menu-item {
+    float: left;
+}
+.main-menu-item:not(:last-child) {
+    margin-right: 28px;
+}
+.main-menu-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* product catalog */
+.products-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.products-item {
+    float: left;
+    width: 254px;
+}
+.products-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+.products-item:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 20px;
+}
+.products-item:hover .products-name {
+    background-color: rgb(20, 221, 194);
+}
+.products-item:hover .price {
+    background-color: rgb(194, 229, 229);
+}
+img {
+    display: block;
+}
+.products-name {
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    background-color: black;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    padding-left: 16px;
+}
+.price {
+    display: block;
+    position: center;
+    float: right;
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    color: white;
+    background-color: rgb(177, 170, 170);
+}
+.design {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.design::after {
+    display: block;
+    width: 200px;
+    height: 6px;
+    background-color: rgb(15, 192, 177);
+    content: "";
+    margin: 0 auto;
+}
+
+/* news */
+.news {
+    margin-bottom: 30px;
+}
+.news-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.news-item {
+    width: 350px;
+    float: left;
+}
+.news-item:not(:last-child) {
+    margin-right: 30px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+* {
+    outline: 1px solid red;
+}
